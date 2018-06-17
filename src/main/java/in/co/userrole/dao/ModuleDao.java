@@ -4,7 +4,7 @@ import java.util.List;
 
 import in.co.userrole.model.ModuleMaster;
 
-public interface ModuleMasterDao {
+public interface ModuleDao {
 
   List<ModuleMaster> fetchAll();
 }

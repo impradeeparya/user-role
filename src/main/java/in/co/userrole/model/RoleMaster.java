@@ -45,4 +45,13 @@ public class RoleMaster {
     this.description = description;
     return this;
   }
+
+  public Set<Permission> getPermissions() {
+    return permissions;
+  }
+
+  public RoleMaster setPermissions(Set<Permission> permissions) {
+    this.permissions = permissions;
+    return this;
+  }
 }

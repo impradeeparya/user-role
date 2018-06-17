@@ -9,7 +9,7 @@ import in.co.userrole.model.ModuleMaster;
 import in.co.userrole.repository.ModuleRepository;
 
 @Repository
-public class ModuleMasterDaoImpl implements ModuleMasterDao {
+public class ModuleDaoImpl implements ModuleDao {
 
   @Autowired
   private ModuleRepository moduleRepository;

@@ -30,9 +30,6 @@ public class ModuleMaster {
       inverseJoinColumns = @JoinColumn(name = "page_id"))
   private Set<PageMaster> pages;
 
-  @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE, mappedBy = "module")
-  private Permission permission;
-
   public String getCode() {
     return code;
   }
@@ -57,15 +54,6 @@ public class ModuleMaster {
 
   public ModuleMaster setPages(Set<PageMaster> pages) {
     this.pages = pages;
-    return this;
-  }
-
-  public Permission getPermission() {
-    return permission;
-  }
-
-  public ModuleMaster setPermission(Permission permission) {
-    this.permission = permission;
     return this;
   }
 

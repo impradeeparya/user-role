@@ -27,9 +27,6 @@ public class PageMaster {
   @ManyToMany(mappedBy = "pages")
   private Set<ModuleMaster> modules;
 
-  @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE, mappedBy = "page")
-  private Permission permission;
-
   public String getCode() {
     return code;
   }
@@ -55,13 +52,5 @@ public class PageMaster {
   public PageMaster setModules(Set<ModuleMaster> modules) {
     this.modules = modules;
     return this;
-  }
-
-  public Permission getPermission() {
-    return permission;
-  }
-
-  public void setPermission(Permission permission) {
-    this.permission = permission;
   }
 }
